@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myAngular">
+	<head>
+		<title>Main Page</title>
+	   	<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="lib/jquery-1.12.4.js"></script>
+		<link rel="stylesheet" href="css/bootstrap-3.3.6-dist/css/bootstrap.css">
+		<script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>		
+		<link rel="stylesheet" href="css/style.css">
+		<script src="lib/angular.js"></script>
+		<script src="lib/angular-route.js"></script>
+		<script src="lib/ngStorage.js"></script>
+		<script src="js/app.js"></script>
+		<script src="controllers/addCustomer.js"></script>
+		<script src="controllers/cardView.js"></script>
+		<script src="controllers/editCustomer.js"></script>
+		<script src="controllers/login.js"></script>
+		<script src="controllers/logout.js"></script>
+		<script src="controllers/order.js"></script>
+		<script src="controllers/about.js"></script>
+		<script src="controllers/details.js"></script>
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" ng-href="{{viewStyle}}.css">
+		<link rel="stylesheet" ng-href="{{loginStyle}}.css">
+		
+	</head>
+	<body>
+		<div class="container-fluid">
+		<nav class="navbar navbar-default customerNavBar">
+		 	<div class="navbar-header">
+			  <a class="navbar-brand" href="#/customers/cardView" id="loginDirectPic"><img alt="users" src="images/pic.png"></a>
+			  <a class="navbar-brand" href="#/customers/cardView" id="loginDirectText">Customer Management</a>
+			  <a href="#/customers/cardView"><button type="button" class="btn btn-link" id="customerTab">Customers</button></a>
+			  <a href="#/orders"><button type="button" class="btn btn-link" id="ordersTab">Orders</button></a>
+			  <a href="#/about"><button type="button" class="btn btn-link" id="aboutTab">About</button></a>
+			  <a href="#/login" id="login"><button type="button" class="btn btn-link" id="loginTab">Login</button></a>
+			  <a href="#/logout" id="logout"><button type="button" class="btn btn-link" id="logoutTab">Logout</button></a>
+			</div>
+		</nav>
+		
+		 <div id="demo" ng-view></div> <!--Data will be place through ng-route -->
+		</div>
+		 
+	</body>
+</html>

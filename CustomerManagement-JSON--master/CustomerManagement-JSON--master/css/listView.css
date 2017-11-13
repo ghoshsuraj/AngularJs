@@ -1,0 +1,99 @@
+*
+{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+#individual
+{
+	width:100%;
+}
+
+#intro,.display
+{
+display:none;
+}
+
+#name, #address, #orders, #deleteCust
+{
+	display:inline-block;
+}
+
+#displayPic
+{
+	width:13%;
+	padding:5px 0px;
+}
+
+#custInfo
+{
+	display:inline-block;
+	width:86%;
+}
+
+#custInfo>button
+{
+	background-color:transparent;
+	border:0;
+}
+
+#name, #address, #orders, #deleteCust
+{
+	width:24.5%;
+	text-align:center;
+}
+
+#customerTab
+{
+	background-color: white;
+	border-radius:4px;
+	color:black;
+}
+
+#listViewTab
+{
+	background:#E6E6E6;
+}
+#titlebar{
+	background-color:#027ff4;
+	color:white; 
+	font-weight:bold;
+	padding:5px 0px;
+	margin-top:30px;
+}
+#headBarName{
+display:inline-block;
+width:35%;
+padding-left:300px;
+}
+.headBar{
+display:inline-block;
+width:20.2%;
+text-align:center;
+}
+.odd {
+  background-color:#f7f7f7;
+  border-bottom:2px solid #e6e6e6;
+}
+#login{
+	display:none;
+}	
+#logout{
+	display:inline;
+}
+
+.disabledClass  > a
+{
+	opacity:0.3;
+}
+
+.selectedPage  > a
+{
+	background-color:#027ff4!important; 
+	color:white !important ; 
+} 
+#listName
+{
+color:#027ff4;
+}

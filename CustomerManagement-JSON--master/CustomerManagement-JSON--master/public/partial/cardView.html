@@ -1,0 +1,49 @@
+	<!--Header-->
+	<div class="center-block">
+		<p><span class="glyphicon glyphicon-user"></span>Customers</p>
+		<div>
+			<a href="#/customers/cardView"><button type="button" class="btn btn-default" id="cardViewTab"><span class="glyphicon glyphicon-th-large"></span>Card View</button></a>
+			<a href="#/customers/listView"><button type="button" class="btn btn-default" id="listViewTab"><span class="glyphicon glyphicon-list"></span>List View</button></a>
+			<a href="#/customers/addCustomer"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Add Customer</button></a>
+			<div class="input">Filter: <input type="text" class="form-control filter" placeholder="Name And Address" ng-model="search"></div>
+		</div>
+	</div>	
+	
+	<!--Repeated Individual Customer Block-->
+	<div style="margin:10px; margin-bottom:0;">
+		<div id="titlebar">
+			<div id="headBarName">Name</div>
+			<div class="headBar">Location</div>
+			<div class="headBar">Orders</div>
+		</div>
+		<div id="individual" ng-repeat = "customer in customers.slice(start,end)| filter:search | limitTo:10" ng-class-odd="'odd'">
+			<div id="intro">
+				<button ng-click="editCustomer(customer,$index)"><span>{{customer.firstName + " " + customer.lastName}}</span></button>
+				<span id="deleteHand" ng-click="deleteCustomer($index)" class="glyphicon glyphicon-remove" style="float:right;"></span>
+			</div>
+					
+			<div>	
+				<div id="displayPic" style="display:inline-block"><img ng-src = {{customer.pic}}/></div>
+				<div id="custInfo">	
+					<button ng-click="editCustomer(customer,$index)" id="name"><div id="listName">{{customer.firstName + " " + customer.lastName}}</div></button>
+					<div id="address">{{customer.city + ", " + customer.state}}</div>
+					<div id="orders"><a href="#/customers/details/{{customers.indexOf(customer)}}">{{customer.orders}} : orders</a></div>
+					<div id="deleteCust"><button type="button" class="btn btn-danger" ng-click="deleteCustomer($index)">Delete</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Pagination-->
+	<div class="footer">
+		<nav class="navbar-bottom">
+			<ul class="pagination">
+				<li ng-class="{'disabledClass':pageIndex == 1}"><a ng-href="{{pageView}}" ng-click="navigate(1)">First</a></li>
+				<li ng-class="{'disabledClass':pageIndex == 1}"><a ng-href="{{pageView}}" ng-click="navigate(-1)">Previous</a></li>
+				<li ng-class="{'selectedPage':pageIndex == $index+1}" ng-repeat="cust in customers | limitTo:lastPage"><a ng-href="{{pageView}}" ng-click="navigate($index+1)">{{$index+1}}</a></li> 
+				<li ng-class="{'disabledClass':pageIndex == lastPage}"><a ng-href="{{pageView}}" ng-click="navigate(-2)" >Next</a></li>
+				<li ng-class="{'disabledClass':pageIndex == lastPage}"><a ng-href="{{pageView}}" ng-click="navigate(lastPage)">Last</a></li> 
+			</ul>
+			<div class="display">Showing {{customers.slice(start,end).length}} of {{customers.length}} customers</div>
+		</nav>
+	</div>

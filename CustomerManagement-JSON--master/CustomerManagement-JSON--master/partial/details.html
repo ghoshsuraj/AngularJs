@@ -1,0 +1,32 @@
+	<h1><span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp;Customer Orders</h1>
+	<div ng-model = "customerDetails">
+		<h4>Orders for <a href="#/customers/cardView">{{customerDetails[customerID].firstName +" "+customerDetails[customerID].lastName}}</a></h4>
+		{{customerDetails[customerID].address}}
+		{{customerDetails[customerID].city +","+ customerDetails[customerID].state}}
+ 
+			<!--Individual customer's Order Details-->
+			<table class="table table-striped table-bordered " style="margin-top:20px;">
+				<thead >
+					<tr style="background-color:#027ff4; color:white;" >
+						<th>Product</th>			
+						<th>Date</th>
+						<th>Quantity</th>
+						<th>Unit Price</th>
+						<th>Total</th>			
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="product in customerDetails[customerID].productDetails">
+						<td>{{product.product}}</td>
+						<td>{{product.Date}}</td>
+						<td>{{product.Quantity}}</td>
+						<td>{{product.price}}</td>
+						<td>{{product.Total}}</td>		
+					</tr>
+					<tr>
+						<td colspan="4"</td>
+						<td style="font-weight:bold;">{{customerDetails[customerID].total}}</td>
+					</tr>
+				</tbody>
+			</table>
+	</div>

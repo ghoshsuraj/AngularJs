@@ -1,0 +1,28 @@
+	{
+	"loginDetails": [
+		{	"name"	:"Mr. Himanshu Shekhar",
+			"email": "himanshu@gmail.com",
+			"password": "himanshu007"
+		},
+		{
+			"name"	:"Mr. Abhilash Baunthiyal",
+			"email": "abhilash@gmail.com",
+			"password": "abhilash007"
+		},
+		{
+			"name"	:"Mr. Atul Kumar",
+			"email": "atul@gmail.com",
+			"password": "atul007"
+		},
+		{
+			"name"	:"Ms. Sakshi Jain",
+			"email": "sakshi@gmail.com",
+			"password": "sakshi007"
+		},
+		{
+			"name"	:"Ms. Prachi Gupta",
+			"email": "prachi@gmail.com",
+			"password": "prachi007"
+		}
+	]
+}

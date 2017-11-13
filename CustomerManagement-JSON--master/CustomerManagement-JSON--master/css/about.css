@@ -1,0 +1,12 @@
+#aboutTab
+		{
+			background-color: white;
+			border-radius:4px;
+			color:black;
+		}
+#login{
+	display:none;
+}	
+#logout{
+	display:inline;
+}

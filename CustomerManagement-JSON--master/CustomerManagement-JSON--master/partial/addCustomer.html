@@ -1,0 +1,98 @@
+	<br/>
+	<h1 class="glyphicon glyphicon-edit" aria-hidden="true" id="headEdit">Edit Customer</h1>
+	 
+	<h1 class="glyphicon glyphicon-edit" aria-hidden="true" id="headAdd">Add Customer</h1>
+	<br />
+	<div id="nameEdit">{{customer.firstName +" "+ customer.lastName }}<a href="#/customers/details/{{(pageIndex-1)*10+index}}"> (View Orders)</a></div> 
+	<br/>
+  
+    <!--Customer Form-->
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label for="firstName" class="col-md-2">First Name:</label>
+			<div class="col-md-1"></div> 
+			<div class="col-md-5">
+				<input type="text" class="form-control" name="firstName" ng-model="fname">
+			</div>
+	    </div>
+	    <div class="form-group">
+			<label for="firstName" class="col-md-2">Last Name:</label>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<input type="text" class="form-control" name="lastName" ng-model="lname">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="gender" class="col-md-2">Gender:</label>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<input type="radio" name="Gender"  value="female" ng-model="gender">Female<br>
+				<input type="radio" name="Gender" value="male" ng-model="gender">Male
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="email" class="col-md-2">Email:</label>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<input type="email" class="form-control" name="email" ng-model="email">
+			</div>
+			<span ng-if="flag2" style="color:red">Email address is not in the correct format!!</span>
+		</div>
+		<div class="form-group">
+			<label for="address" class="col-md-2">Address:</label>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<input type="text" class="form-control" name="address" ng-model="address">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="state" class="col-md-2">State:</label>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<select class="form-control" ng-model="state">
+					<option>Andhra Pradesh</option>
+					<option>Arunachal Pradesh</option>
+					<option>Bihar</option>
+					<option>Assam</option>
+					<option>Maharashtra</option>
+					<option>Goa</option>
+					<option>Karnataka</option>
+					<option>Orissa</option>
+					<option>Punjab</option>
+					<option>Tamil Nadu</option>
+					<option>Telangana</option>
+					<option>Kerala</option>
+					<option>Gujarat</option>
+					<option>Uttarakhand</option>
+					<option>Uttar Pradesh</option>
+					<option>Washington</option>
+					<option>California</option>
+					<option>Texas</option>
+					<option>Arizona</option>
+					<option>Dallas</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="city" class="col-md-2">City:</label>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<input type="text" class="form-control" name="city" ng-model="city">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="city" class="col-md-2">Zip:</label>
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
+				<input type="text" class="form-control" name="zip" ng-model="zip">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-md-5">
+				<button type="button" class="btn btn-info" style="font-weight:bold;" ng-click="modifyCustomer()">{{button1}}</button>
+				<button type="button" class="btn btn-danger" style="font-weight:bold;" ng-click="truncCustomer()" >{{button2}}</button>
+			</div>
+		</div>
+	</form>
+   
+ 

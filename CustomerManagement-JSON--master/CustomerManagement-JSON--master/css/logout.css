@@ -1,0 +1,12 @@
+ #logout{
+	 display:none;
+ }
+#login{
+	display:inline;
+}
+ #loginTab{
+	background-color: white;
+	border-radius:4px;
+	color:black;
+ }
+

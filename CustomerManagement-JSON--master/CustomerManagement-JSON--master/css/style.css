@@ -1,0 +1,55 @@
+button
+{
+	border-radius:2px;
+}
+.navbar-brand img{
+	margin: -13px;
+}
+.navbar-header .btn-link{
+	color:#fff;
+	margin:10px;
+	font-weight:bold;
+	text-decoration:none;
+	}
+
+.navbar-header .navbar-brand {
+    color: #fff;
+	
+}
+.navbar-header .btn-link:active {
+	color:#8f8c8c;
+	background-color:#fff;
+}
+.center-block p{
+	top:10px;
+	font-size:25px;
+	margin:15px;
+}
+.center-block .btn-default{
+	border:transparent;
+	font-weight:bold;
+}
+.input{
+	float:right;
+	font-weight:bold;	
+    margin-right: 40px;
+}
+.filter{
+	display:inline;
+	width:auto;
+}
+.content .icon{
+	font-size:25px;
+	margin:15px;
+	margin-bottom:25px;
+}
+.creaters{
+display:block;
+}
+#para{
+	margin:15px;
+}
+#logout{
+	display:none;
+}
+

@@ -1,0 +1,65 @@
+#individual
+{ 
+display:inline-block; 
+margin:15px;
+width:20%; 
+border:1px solid black;
+}
+
+#intro
+{
+	background-color:#027ff4;
+	color:white; 
+	font-weight:bold;
+	padding:5px;
+}
+
+#intro button
+{
+	background-color:transparent;
+	border:0;
+}
+
+#custInfo
+{
+	display:inline-block;
+}
+
+
+#name, #deleteCust, #custInfo>button,#titlebar
+{
+	display:none;
+}
+
+#deleteHand
+{
+	cursor:pointer;
+}
+
+#customerTab
+{
+	background-color: white;
+	border-radius:4px;
+	color:black;
+}
+
+#cardViewTab
+{
+	background:#E6E6E6;
+}
+#login{
+	display:none;
+}	
+#logout{
+	display:inline;
+}
+.disabledClass  > a
+{
+	opacity:0.3;
+}
+
+.selectedPage  > a
+{
+	background-color:#027ff4 !important; 
+	color:white !important ; 
+} 

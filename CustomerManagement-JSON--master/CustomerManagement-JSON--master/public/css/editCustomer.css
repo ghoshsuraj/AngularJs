@@ -1,0 +1,30 @@
+.form-control{
+  border-left: 5px solid green;
+  }  
+.form-group{
+  font-size:1.4em;
+ }
+ #nameEdit{
+ display:block;
+ }
+ #headEdit{
+ display:inline;
+ }
+ #headAdd{
+ display:none;
+ }
+ #login{
+	display:none;
+}	
+#logout{
+	display:inline;
+}
+#nameEdit
+{
+margin-top:20px;
+font-size:1.375em;
+}
+#cardViewTab
+{
+	background:#E6E6E6;
+}

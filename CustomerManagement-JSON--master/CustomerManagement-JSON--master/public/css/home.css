@@ -1,0 +1,80 @@
+.customerNavBar{
+	background-color:#027ef2;
+	margin-bottom:0px;
+	width:100%;
+}
+.navbar-brand img{
+	margin: -13px;
+}
+.navbar-header .btn-link{
+	color:#fff;
+	margin:10px;
+	font-weight:bold;
+	text-decoration:none;
+}
+.navbar-header .navbar-brand {
+    color: #fff;
+	
+}
+.navbar-header .btn-link:active {
+	color:#8f8c8c;
+	background-color:#fff;
+}
+.center-block p{
+	top:10px;
+	font-size:25px;
+	margin:15px;
+}
+.center-block .btn-default{
+	border:transparent;
+	font-weight:bold;
+}
+.input{
+	float:right;
+	font-weight:bold;	
+    margin-right: 40px;
+}
+.filter{
+	display:inline;
+	width:auto;
+}
+.content .icon{
+	font-size:25px;
+	margin:15px;
+	margin-bottom:25px;
+}
+.creaters{
+display:block;
+}
+#para{
+	margin:15px;
+}
+
+.img-circle{
+	width:180px;
+	height:auto;
+border:solid #027ef2 2px;
+}
+#pro{
+	
+	font-weight:bold;
+	margin:10px;
+	
+}
+#slide{
+	padding:0;
+	margin:0;
+	width:100%;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+	width:100%;
+	height:400px;
+	margin:0;
+}
+#login{
+	display:none;
+}	
+#logout{
+	display:inline;
+}
